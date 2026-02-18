@@ -9,79 +9,168 @@ import Footer from "../components/Footer.astro"
   <main class="pt-24 pb-16 min-h-screen">
     <div class="max-w-3xl mx-auto px-6 py-12">
       <h1 class="text-4xl font-bold text-stone-900 mb-2">Terms of Service</h1>
-      <p class="text-stone-500 mb-10">Last updated: February 17, 2026</p>
+      <p class="text-stone-500 mb-10">Effective date: February 17, 2026 &middot; Last updated: February 17, 2026</p>
 
-      <div class="space-y-8">
+      <div class="bg-primary-50 border border-primary-100 rounded-2xl p-6 mb-10">
+        <p class="text-stone-700 text-sm leading-relaxed">
+          <strong>Plain English summary:</strong> Use Tidy fairly, pay for what you use, and don't do anything illegal. We'll keep the app running and be upfront about any changes.
+        </p>
+      </div>
+
+      <div class="space-y-10 text-stone-700">
+
         <section>
-          <h2 class="text-2xl font-semibold text-stone-900 mb-3">Acceptance of Terms</h2>
-          <p class="text-stone-600 leading-relaxed">
-            By downloading or using Tidy ("the App"), you agree to these Terms of Service. If you do not agree, please do not use the App.
+          <h2 class="text-2xl font-semibold text-stone-900 mb-3">1. Acceptance of Terms</h2>
+          <p class="leading-relaxed text-sm">
+            By downloading, installing, or using the Tidy mobile application or website at tidyapp.me ("Service"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the Service. These Terms apply to all users, including free and paid subscribers.
           </p>
         </section>
 
         <section>
-          <h2 class="text-2xl font-semibold text-stone-900 mb-3">Use of the App</h2>
-          <p class="text-stone-600 leading-relaxed mb-3">You agree to use Tidy only for lawful purposes. You may not:</p>
-          <ul class="space-y-2 text-stone-600 text-sm list-disc list-inside">
-            <li>Use the App in any way that violates applicable laws or regulations</li>
-            <li>Attempt to reverse engineer, decompile, or modify the App</li>
-            <li>Use the App to transmit harmful, offensive, or illegal content</li>
-            <li>Share your account credentials with others</li>
+          <h2 class="text-2xl font-semibold text-stone-900 mb-3">2. Description of Service</h2>
+          <p class="leading-relaxed text-sm">
+            Tidy is an ADHD-friendly home cleaning and task management application. The Service allows users to create and manage cleaning tasks, organize rooms, track streaks, and (with a paid subscription) share household responsibilities with family members. Features may change over time as we improve the app.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold text-stone-900 mb-3">3. Eligibility and Accounts</h2>
+          <ul class="space-y-3 text-sm leading-relaxed list-disc list-inside">
+            <li>You must be at least 13 years old to use Tidy.</li>
+            <li>You are responsible for maintaining the confidentiality of your account credentials.</li>
+            <li>You are responsible for all activity that occurs under your account.</li>
+            <li>You must provide accurate information when creating your account.</li>
+            <li>One person may not maintain multiple accounts to circumvent free tier limits.</li>
+            <li>You must notify us immediately at <a href="mailto:privacy@tidyapp.me" class="text-primary-600 underline">privacy@tidyapp.me</a> if you suspect unauthorized account access.</li>
           </ul>
         </section>
 
         <section>
-          <h2 class="text-2xl font-semibold text-stone-900 mb-3">Subscriptions and Billing</h2>
-          <div class="space-y-4 text-stone-600">
-            <p class="leading-relaxed"><strong class="text-stone-900">Free Tier:</strong> Available without payment. Includes 2 rooms and basic task features.</p>
-            <p class="leading-relaxed"><strong class="text-stone-900">Plus ($4.99/month):</strong> Subscription billed monthly. Includes unlimited rooms and all features.</p>
-            <p class="leading-relaxed"><strong class="text-stone-900">Family ($7.99/month):</strong> Subscription billed monthly. Includes all Plus features plus up to 6 household members.</p>
-            <p class="leading-relaxed">Subscriptions auto-renew unless cancelled at least 24 hours before the renewal date. Manage or cancel subscriptions through your Google Play or Apple App Store account settings.</p>
-            <p class="leading-relaxed">Refunds are handled per Google Play and Apple App Store policies.</p>
+          <h2 class="text-2xl font-semibold text-stone-900 mb-4">4. Subscriptions and Billing</h2>
+
+          <h3 class="text-lg font-semibold text-stone-900 mb-3">Subscription Tiers</h3>
+          <div class="space-y-3 mb-6">
+            <div class="border border-stone-200 rounded-xl p-4 text-sm">
+              <p class="font-semibold text-stone-900 mb-1">Free</p>
+              <p class="text-stone-600">2 rooms and basic task features, available at no cost for as long as you use the app.</p>
+            </div>
+            <div class="border border-primary-200 bg-primary-50 rounded-xl p-4 text-sm">
+              <p class="font-semibold text-stone-900 mb-1">Plus — $4.99/month</p>
+              <p class="text-stone-600">Unlimited rooms, all gamification features, no ads, and pattern learning. Billed monthly.</p>
+            </div>
+            <div class="border border-stone-200 rounded-xl p-4 text-sm">
+              <p class="font-semibold text-stone-900 mb-1">Family — $7.99/month</p>
+              <p class="text-stone-600">All Plus features plus up to 6 household members, leaderboards, and child task approval. Billed monthly.</p>
+            </div>
+          </div>
+
+          <h3 class="text-lg font-semibold text-stone-900 mb-2">Billing Terms</h3>
+          <ul class="space-y-2 text-sm leading-relaxed list-disc list-inside mb-4">
+            <li>Subscriptions are billed through Google Play (Android) or the Apple App Store (iOS) and are subject to their respective billing terms.</li>
+            <li>Subscriptions automatically renew at the end of each billing period unless cancelled at least 24 hours before the renewal date.</li>
+            <li>Prices are in USD and may vary by region based on platform pricing.</li>
+            <li>We may change subscription prices with at least 30 days' notice. Price changes will not affect your current billing period.</li>
+          </ul>
+
+          <h3 class="text-lg font-semibold text-stone-900 mb-2">Cancellation and Refunds</h3>
+          <ul class="space-y-2 text-sm leading-relaxed list-disc list-inside">
+            <li>Cancel anytime through your Google Play or Apple App Store account settings. Cancellation takes effect at the end of the current billing period — you retain access until then.</li>
+            <li>Refunds are handled per Google Play and Apple App Store policies. We do not process refunds directly.</li>
+            <li>Downgrading from a paid plan to Free takes effect at the end of the current billing period.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold text-stone-900 mb-3">5. Acceptable Use</h2>
+          <p class="text-sm leading-relaxed mb-4">You agree not to use the Service to:</p>
+          <ul class="space-y-2 text-sm leading-relaxed list-disc list-inside">
+            <li>Violate any applicable local, state, national, or international law or regulation.</li>
+            <li>Impersonate any person or entity, or falsely state your affiliation with a person or entity.</li>
+            <li>Attempt to reverse engineer, decompile, disassemble, or derive source code from the app.</li>
+            <li>Use automated scripts, bots, or scrapers to access the Service.</li>
+            <li>Introduce viruses, malware, or other harmful code.</li>
+            <li>Attempt to gain unauthorized access to any part of the Service or its infrastructure.</li>
+            <li>Create multiple accounts to circumvent free tier limitations.</li>
+            <li>Use the Service in any way that could damage, disable, or impair it.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold text-stone-900 mb-3">6. Your Content</h2>
+          <p class="leading-relaxed text-sm mb-3">
+            You retain full ownership of all content you create within Tidy — including room names, task names, and schedules ("Your Content"). By using the Service, you grant us a limited, non-exclusive, royalty-free license to store, process, and display Your Content solely to provide the Service to you.
+          </p>
+          <p class="leading-relaxed text-sm">
+            We will never use Your Content for advertising, analytics sold to third parties, or any purpose other than operating the Service.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold text-stone-900 mb-3">7. Intellectual Property</h2>
+          <p class="leading-relaxed text-sm">
+            The Tidy app, website, logo, design, and all associated content are owned by Tidy and protected by copyright, trademark, and other applicable intellectual property laws. You are granted a limited, personal, non-transferable, non-sublicensable license to use the Service for your personal, non-commercial purposes. Nothing in these Terms grants you any rights to use our trademarks, logos, or brand features.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold text-stone-900 mb-3">8. Family Plan and Household Members</h2>
+          <ul class="space-y-2 text-sm leading-relaxed list-disc list-inside">
+            <li>The Family plan allows up to 6 people to share a household in the app.</li>
+            <li>The account owner is responsible for ensuring all household members comply with these Terms.</li>
+            <li>Household members have access to shared room and task data within your household only.</li>
+            <li>Removing a member from your household will revoke their access to shared data.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold text-stone-900 mb-3">9. Disclaimer of Warranties</h2>
+          <p class="leading-relaxed text-sm">
+            THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE SERVICE WILL BE UNINTERRUPTED, ERROR-FREE, OR FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS. YOUR USE OF THE SERVICE IS AT YOUR SOLE RISK.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold text-stone-900 mb-3">10. Limitation of Liability</h2>
+          <p class="leading-relaxed text-sm">
+            TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, TIDY SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING LOSS OF PROFITS, DATA, OR GOODWILL, ARISING OUT OF OR IN CONNECTION WITH YOUR USE OF THE SERVICE. OUR TOTAL LIABILITY TO YOU FOR ANY CLAIMS ARISING UNDER THESE TERMS SHALL NOT EXCEED THE AMOUNT YOU PAID TO US IN THE 12 MONTHS PRECEDING THE CLAIM, OR $10, WHICHEVER IS GREATER.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold text-stone-900 mb-3">11. Termination</h2>
+          <p class="leading-relaxed text-sm mb-3">
+            You may stop using the Service and delete your account at any time. We reserve the right to suspend or terminate your account if you violate these Terms, with or without notice. Upon termination, your right to use the Service ceases immediately.
+          </p>
+          <p class="leading-relaxed text-sm">
+            If we terminate your account without cause, we will refund any prepaid subscription fees for the unused portion of your current billing period.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold text-stone-900 mb-3">12. Governing Law</h2>
+          <p class="leading-relaxed text-sm">
+            These Terms shall be governed by and construed in accordance with the laws of the United States, without regard to its conflict of law provisions. Any disputes arising under these Terms shall be subject to the exclusive jurisdiction of the courts located in the United States.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold text-stone-900 mb-3">13. Changes to Terms</h2>
+          <p class="leading-relaxed text-sm">
+            We may update these Terms at any time. When we make material changes, we will notify you via in-app notification and update the "Last updated" date above. Your continued use of the Service after the effective date of the updated Terms constitutes your acceptance. If you do not agree to the updated Terms, you must stop using the Service.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold text-stone-900 mb-3">14. Contact</h2>
+          <p class="leading-relaxed text-sm">
+            If you have questions about these Terms, please contact us:
+          </p>
+          <div class="mt-4 bg-stone-100 rounded-xl p-5 text-sm space-y-1">
+            <p><strong>Email:</strong> <a href="mailto:legal@tidyapp.me" class="text-primary-600 underline">legal@tidyapp.me</a></p>
+            <p><strong>Website:</strong> <a href="https://tidyapp.me" class="text-primary-600 underline">tidyapp.me</a></p>
           </div>
         </section>
 
-        <section>
-          <h2 class="text-2xl font-semibold text-stone-900 mb-3">Intellectual Property</h2>
-          <p class="text-stone-600 leading-relaxed">
-            All content, features, and functionality of the App — including but not limited to text, graphics, logos, and software — are owned by Tidy and protected by applicable intellectual property laws. You are granted a limited, non-exclusive license to use the App for personal, non-commercial purposes.
-          </p>
-        </section>
-
-        <section>
-          <h2 class="text-2xl font-semibold text-stone-900 mb-3">Your Content</h2>
-          <p class="text-stone-600 leading-relaxed">
-            You retain ownership of all data you create within the App (tasks, rooms, schedules). By using the App, you grant us a limited license to store and process this data solely to provide the App's services.
-          </p>
-        </section>
-
-        <section>
-          <h2 class="text-2xl font-semibold text-stone-900 mb-3">Disclaimer of Warranties</h2>
-          <p class="text-stone-600 leading-relaxed">
-            Tidy is provided "as is" without warranties of any kind, express or implied. We do not warrant that the App will be error-free or uninterrupted.
-          </p>
-        </section>
-
-        <section>
-          <h2 class="text-2xl font-semibold text-stone-900 mb-3">Limitation of Liability</h2>
-          <p class="text-stone-600 leading-relaxed">
-            To the maximum extent permitted by law, Tidy shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of the App.
-          </p>
-        </section>
-
-        <section>
-          <h2 class="text-2xl font-semibold text-stone-900 mb-3">Changes to Terms</h2>
-          <p class="text-stone-600 leading-relaxed">
-            We may update these Terms at any time. Continued use of the App after changes constitutes acceptance of the updated Terms. We will notify users of significant changes via the App or email.
-          </p>
-        </section>
-
-        <section>
-          <h2 class="text-2xl font-semibold text-stone-900 mb-3">Contact</h2>
-          <p class="text-stone-600 leading-relaxed">
-            Questions? Contact us at <a href="mailto:legal@tidyapp.me" class="text-primary-600 underline">legal@tidyapp.me</a>
-          </p>
-        </section>
       </div>
     </div>
   </main>
