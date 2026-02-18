@@ -1,0 +1,84 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Nav from "../components/Nav.astro"
+import Footer from "../components/Footer.astro"
+---
+
+<Layout title="Privacy Policy — Tidy App" description="Privacy Policy for Tidy ADHD Cleaning App">
+  <Nav />
+  <main class="pt-24 pb-16 min-h-screen">
+    <div class="max-w-3xl mx-auto px-6 py-12">
+      <h1 class="text-4xl font-bold text-stone-900 mb-2">Privacy Policy</h1>
+      <p class="text-stone-500 mb-10">Last updated: February 17, 2026</p>
+
+      <div class="prose prose-stone max-w-none space-y-8">
+        <section>
+          <h2 class="text-2xl font-semibold text-stone-900 mb-3">Overview</h2>
+          <p class="text-stone-600 leading-relaxed">
+            Tidy ("we", "our", "us") is committed to protecting your privacy. This policy explains what data we collect, how we use it, and your rights. We believe privacy is a core part of being ADHD-friendly — your data is yours.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold text-stone-900 mb-3">Data We Collect</h2>
+          <div class="space-y-4">
+            <div class="bg-primary-50 border border-primary-100 rounded-xl p-4">
+              <h3 class="font-semibold text-stone-900 mb-1">Account Information</h3>
+              <p class="text-stone-600 text-sm">Email address and display name, collected when you create an account. Used solely to identify your account and personalize your experience.</p>
+            </div>
+            <div class="bg-primary-50 border border-primary-100 rounded-xl p-4">
+              <h3 class="font-semibold text-stone-900 mb-1">App Usage Data</h3>
+              <p class="text-stone-600 text-sm">Tasks you create, rooms you manage, and streak data. Stored securely in your account and used only to power app features.</p>
+            </div>
+            <div class="bg-primary-50 border border-primary-100 rounded-xl p-4">
+              <h3 class="font-semibold text-stone-900 mb-1">Device Information</h3>
+              <p class="text-stone-600 text-sm">Basic device type and OS version for app compatibility. No device identifiers are stored or shared.</p>
+            </div>
+            <div class="bg-primary-50 border border-primary-100 rounded-xl p-4">
+              <h3 class="font-semibold text-stone-900 mb-1">Purchase Information</h3>
+              <p class="text-stone-600 text-sm">Subscription status only — we do not store payment card details. All payments are handled by Google Play or Apple App Store.</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold text-stone-900 mb-3">What We Don't Do</h2>
+          <ul class="space-y-2 text-stone-600">
+            <li class="flex items-start gap-2"><span class="text-primary-500 mt-0.5">✓</span> We do not sell your data to third parties</li>
+            <li class="flex items-start gap-2"><span class="text-primary-500 mt-0.5">✓</span> We do not use your data for advertising</li>
+            <li class="flex items-start gap-2"><span class="text-primary-500 mt-0.5">✓</span> We do not share your personal information without consent</li>
+            <li class="flex items-start gap-2"><span class="text-primary-500 mt-0.5">✓</span> We do not track your location</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold text-stone-900 mb-3">Third-Party Services</h2>
+          <p class="text-stone-600 leading-relaxed mb-4">We use the following trusted third-party services:</p>
+          <ul class="space-y-2 text-stone-600 text-sm">
+            <li><strong>Supabase</strong> — secure cloud database for your app data. <a href="https://supabase.com/privacy" class="text-primary-600 underline">Privacy Policy</a></li>
+            <li><strong>RevenueCat</strong> — subscription management. <a href="https://www.revenuecat.com/privacy" class="text-primary-600 underline">Privacy Policy</a></li>
+            <li><strong>Google Play</strong> — app distribution and payments. <a href="https://policies.google.com/privacy" class="text-primary-600 underline">Privacy Policy</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold text-stone-900 mb-3">Your Rights</h2>
+          <p class="text-stone-600 leading-relaxed">You have the right to access, correct, or delete your data at any time. To request data deletion, email us at <a href="mailto:privacy@tidyapp.me" class="text-primary-600 underline">privacy@tidyapp.me</a> and we will remove your account and all associated data within 30 days.</p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold text-stone-900 mb-3">Children's Privacy</h2>
+          <p class="text-stone-600 leading-relaxed">Tidy is not directed to children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us immediately.</p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold text-stone-900 mb-3">Contact</h2>
+          <p class="text-stone-600 leading-relaxed">
+            Questions about this policy? Contact us at <a href="mailto:privacy@tidyapp.me" class="text-primary-600 underline">privacy@tidyapp.me</a>
+          </p>
+        </section>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</Layout>

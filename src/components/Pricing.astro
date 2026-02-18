@@ -1,0 +1,150 @@
+---
+const plans = [
+  {
+    name: "Free",
+    price: "$0",
+    period: "forever",
+    description: "Get started and build your cleaning habit.",
+    features: [
+      "2 rooms",
+      "Basic task scheduling",
+      "Daily task generation",
+      "Streak tracking",
+    ],
+    notIncluded: ["Unlimited rooms", "All gamification", "No ads", "Family mode"],
+    cta: "Download Free",
+    ctaHref: "https://play.google.com/store/apps/details?id=com.forgekit.tidy",
+    highlight: false,
+  },
+  {
+    name: "Plus",
+    price: "$4.99",
+    period: "per month",
+    description: "Everything you need for a tidy, stress-free home.",
+    features: [
+      "Unlimited rooms",
+      "All gamification features",
+      "No ads",
+      "Pattern learning",
+      "Celebration animations",
+      "Priority support",
+    ],
+    notIncluded: ["Family mode", "Leaderboards"],
+    cta: "Get Plus",
+    ctaHref: "https://play.google.com/store/apps/details?id=com.forgekit.tidy",
+    highlight: true,
+    badge: "Most Popular",
+  },
+  {
+    name: "Family",
+    price: "$7.99",
+    period: "per month",
+    description: "Keep the whole household on the same page.",
+    features: [
+      "Everything in Plus",
+      "Up to 6 household members",
+      "Family leaderboards",
+      "Child task approval",
+      "Track contributions",
+      "Shared household view",
+    ],
+    notIncluded: [],
+    cta: "Get Family",
+    ctaHref: "https://play.google.com/store/apps/details?id=com.forgekit.tidy",
+    highlight: false,
+  },
+]
+---
+
+<section id="pricing" class="py-24 bg-stone-50">
+  <div class="max-w-6xl mx-auto px-6">
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <div class="inline-flex items-center gap-2 bg-primary-100 text-primary-700 px-4 py-1.5 rounded-full text-sm font-medium mb-4">
+        Simple pricing
+      </div>
+      <h2 class="text-4xl lg:text-5xl font-bold text-stone-900 mb-4">
+        Start free, upgrade anytime
+      </h2>
+      <p class="text-xl text-stone-600 max-w-xl mx-auto">
+        No commitments, cancel anytime. Start with the free tier and upgrade when you're ready.
+      </p>
+    </div>
+
+    <!-- Pricing cards -->
+    <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+      {plans.map((plan) => (
+        <div class={`relative rounded-3xl p-8 flex flex-col ${
+          plan.highlight
+            ? "bg-primary-600 text-white shadow-2xl shadow-primary-200 scale-105"
+            : "bg-white border border-stone-200"
+        }`}>
+          {plan.badge && (
+            <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gold-400 text-stone-900 text-xs font-bold px-4 py-1.5 rounded-full shadow">
+              {plan.badge}
+            </div>
+          )}
+
+          <div class="mb-6">
+            <div class={`text-sm font-semibold mb-2 ${plan.highlight ? "text-primary-200" : "text-primary-600"}`}>
+              {plan.name}
+            </div>
+            <div class="flex items-baseline gap-1 mb-2">
+              <span class={`text-4xl font-bold ${plan.highlight ? "text-white" : "text-stone-900"}`}>
+                {plan.price}
+              </span>
+              <span class={`text-sm ${plan.highlight ? "text-primary-200" : "text-stone-500"}`}>
+                /{plan.period}
+              </span>
+            </div>
+            <p class={`text-sm ${plan.highlight ? "text-primary-100" : "text-stone-600"}`}>
+              {plan.description}
+            </p>
+          </div>
+
+          <ul class="space-y-3 mb-8 flex-1">
+            {plan.features.map((feature) => (
+              <li class="flex items-center gap-2.5 text-sm">
+                <span class={`w-4 h-4 rounded-full flex items-center justify-center flex-shrink-0 ${
+                  plan.highlight ? "bg-primary-500" : "bg-primary-100"
+                }`}>
+                  <svg class={`w-2.5 h-2.5 ${plan.highlight ? "text-white" : "text-primary-600"}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </span>
+                <span class={plan.highlight ? "text-white" : "text-stone-700"}>{feature}</span>
+              </li>
+            ))}
+            {plan.notIncluded.map((feature) => (
+              <li class="flex items-center gap-2.5 text-sm opacity-40">
+                <span class="w-4 h-4 rounded-full flex items-center justify-center flex-shrink-0 bg-stone-200">
+                  <svg class="w-2.5 h-2.5 text-stone-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12"/>
+                  </svg>
+                </span>
+                <span class={plan.highlight ? "text-primary-200" : "text-stone-500"}>{feature}</span>
+              </li>
+            ))}
+          </ul>
+
+          <a
+            href={plan.ctaHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            class={`block text-center py-3 rounded-xl font-semibold text-sm transition-all hover:scale-105 ${
+              plan.highlight
+                ? "bg-white text-primary-600 hover:bg-primary-50"
+                : "bg-primary-600 text-white hover:bg-primary-700"
+            }`}
+          >
+            {plan.cta}
+          </a>
+        </div>
+      ))}
+    </div>
+
+    <p class="text-center text-sm text-stone-500 mt-8">
+      All plans include a 7-day free trial of Plus features. No credit card required to start.
+    </p>
+  </div>
+</section>

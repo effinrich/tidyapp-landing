@@ -1,0 +1,88 @@
+---
+const features = [
+  {
+    icon: "🎨",
+    title: "Calming Design",
+    description: "Soft teals and greens scientifically shown to reduce anxiety and promote focus. No harsh colors, no visual clutter.",
+    color: "primary",
+  },
+  {
+    icon: "⚡",
+    title: "Instant Feedback",
+    description: "Offline-first architecture means completing a task feels immediate. No loading spinners, no waiting — just the reward.",
+    color: "sage",
+  },
+  {
+    icon: "📅",
+    title: "Smart Scheduling",
+    description: "Set your cleaning schedule once. Tidy generates your daily tasks automatically based on what actually needs attention.",
+    color: "sky",
+  },
+  {
+    icon: "🔔",
+    title: "Gentle Reminders",
+    description: "Encouraging nudges, never nagging. Notifications that feel supportive — like a caring friend, not an alarm.",
+    color: "gold",
+  },
+  {
+    icon: "🎉",
+    title: "Celebration Moments",
+    description: "Satisfying animations when you complete tasks. That dopamine hit you've been missing. Streaks that celebrate, not shame.",
+    color: "primary",
+  },
+  {
+    icon: "🧠",
+    title: "Pattern Learning",
+    description: "Tidy learns when you're most productive and adapts. All insights stay private — your data never leaves your household.",
+    color: "sage",
+  },
+]
+
+const colorMap: Record<string, { bg: string; icon: string; badge: string }> = {
+  primary: { bg: "bg-primary-50 border-primary-100", icon: "bg-primary-100", badge: "text-primary-700" },
+  sage: { bg: "bg-sage-50 border-sage-100", icon: "bg-sage-100", badge: "text-sage-700" },
+  sky: { bg: "bg-sky-50 border-sky-100", icon: "bg-sky-100", badge: "text-sky-700" },
+  gold: { bg: "bg-yellow-50 border-yellow-100", icon: "bg-yellow-100", badge: "text-yellow-700" },
+}
+---
+
+<section id="features" class="py-24 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <div class="inline-flex items-center gap-2 bg-primary-100 text-primary-700 px-4 py-1.5 rounded-full text-sm font-medium mb-4">
+        Built different
+      </div>
+      <h2 class="text-4xl lg:text-5xl font-bold text-stone-900 mb-4">
+        Why Tidy is different
+      </h2>
+      <p class="text-xl text-stone-600 max-w-2xl mx-auto">
+        Most cleaning apps assume you can stick to rigid schedules and long checklists. Tidy understands that ADHD brains need something different.
+      </p>
+    </div>
+
+    <!-- Feature grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {features.map((feature) => {
+        const colors = colorMap[feature.color] || colorMap.primary
+        return (
+          <div class={`p-6 rounded-2xl border ${colors.bg} hover:shadow-md transition-shadow`}>
+            <div class={`w-12 h-12 ${colors.icon} rounded-xl flex items-center justify-center text-2xl mb-4`}>
+              {feature.icon}
+            </div>
+            <h3 class="text-lg font-semibold text-stone-900 mb-2">{feature.title}</h3>
+            <p class="text-stone-600 text-sm leading-relaxed">{feature.description}</p>
+          </div>
+        )
+      })}
+    </div>
+
+    <!-- Bottom callout -->
+    <div class="mt-16 bg-gradient-to-r from-primary-600 to-primary-700 rounded-3xl p-10 text-center text-white">
+      <h3 class="text-2xl lg:text-3xl font-bold mb-3">Designed with the ADHD community</h3>
+      <p class="text-primary-100 text-lg max-w-xl mx-auto">
+        Every design decision prioritizes calm, focus, and accomplishment over perfection. Built by and for neurodivergent minds.
+      </p>
+    </div>
+  </div>
+</section>

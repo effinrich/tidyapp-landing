@@ -1,0 +1,22 @@
+<svg width="400" height="120" viewBox="0 0 400 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Tidy Wordmark -->
+  <defs>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0d9488;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#14b8a6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- "Tidy" text - friendly rounded font style -->
+  <text x="20" y="88"
+        font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+        font-size="80"
+        font-weight="700"
+        letter-spacing="-2"
+        fill="url(#textGradient)">
+    Tidy
+  </text>
+
+  <!-- Subtle dot accent on the i -->
+  <circle cx="178" cy="30" r="12" fill="#f59e0b"/>
+</svg>
