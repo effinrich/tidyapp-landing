@@ -1,6 +1,6 @@
 # Tidy Landing
 
-Marketing landing page for [Tidy](https://tidyapp.me) — an ADHD-friendly cleaning app built by [ForgeKit](https://forgekit.com).
+Marketing landing page for [Tidy](https://tidyapp.me) — an ADHD-friendly cleaning app built by [ForgeKit](https://forgekit.cloud).
 
 ## Tech stack
 
